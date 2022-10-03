@@ -1,0 +1,36 @@
+body {
+    font-family: monospace;
+    background-color: #1a2623;
+    color: #ffffff;
+}
+
+h1, #description {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    min-height: 20px;
+    margin: 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.inline {
+    display: inline;
+    width: unset;
+}
