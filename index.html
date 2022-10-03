@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linux user survey form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Linux user survey</h1>
+    <p id="description">Let us know what you think about Linux.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="name" required></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="email" required></label>
+        <label id="number-label" for="number">Age: <input id="number" name="age" type="number" min="0" max="150" placeholder="age" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How long have you been using Linux? 
+          <select id="dropdown">
+            <option>&lt; 1</option>
+            <option>1-2</option>
+            <option>3-5</option>
+            <option>6-8</option>
+            <option>9-10</option>
+            <option>&gt; 10</option>
+          </select>
+          year(s)
+        </label>
+        <p>Have you ever distrohopped before? </p>
+        <label for="distrohop-yes"><input id="distrohop-yes" name="distrohop" type="radio" value="yes"> Yes</label>
+        <label for="distrohop-no"><input id="distrohop-no" name="distrohop" type="radio" value="no"> No</label>
+        <p>Which distro(s) have you used?</p>
+        <label for="distro-arch"><input id="distro-arch" name="distro" type="checkbox" value="arch"> Arch Linux</label>
+        <label><input id="distro-linuxmint" name="distro" type="checkbox" value="linuxmint"> Linux Mint</label>
+        <label for="distro-ubuntu"><input id="distro-ubuntu" name="distro" type="checkbox" value="ubuntu"> Ubuntu</label>
+        <label for="distro-other"><input id="distro-other" name="distro" type="checkbox" value="other"> Other</label>
+        <label>What do you like about Linux? <textarea></textarea></label>
+        <label>What do you not like about Linux? <textarea></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
